@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><title>K8BH - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>K8BH - Developer Portfolio</title>
 
     <style>
       * {
@@ -13,49 +17,57 @@
         margin: 0;
       }
       body {
-        background-color:#728E6D;
+        background-color: #728e6d;
         color: white;
       }
-      nav{
+      nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
         height: 70px;
         background-color: #35572c;
       }
-      nav ul{
+      nav ul {
         display: flex;
         justify-content: center;
       }
-      nav ul li{
+      nav ul li {
         list-style: none;
         margin: 0 23px;
       }
-      .left{
+      .left {
         font-size: 1.5rem;
       }
-      .firstsection{
+      .firstsection {
         display: flex;
         justify-content: space-around;
-        margin: 20px 0 ;
+        margin: 20px 0;
+        align-items: center;
       }
-      .firstsection div{
+      .firstsection div {
         width: 35%;
       }
-      .leftside{
+      .leftside {
         font-size: 3rem;
         margin: 130px 50px;
         align-items: center;
-        color:#E5CD82;
- 
+        color: #e5cd82;
       }
-         .rightside img{
-            width: 80%;
-            margin: 50px 0 ;
+      .rightside img {
+        width: 80%;
+        margin: 50px 0;
+      }
+      .Cream-color {
+        color: #fff2b4;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
 
       }
-      .Cream-color{
-        color:#FFF2B4;
+      nav ul li a:hover{
+        color: burlywood;
+        font-size: 1.07rem;
       }
     </style>
   </head>
@@ -64,24 +76,35 @@
       <nav>
         <div class="left">K8BH Portfolio</div>
         <div class="right">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>hobbys</li>
-                <li>Projects</li>
-                <li>Contact Me</li>
-            </ul>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Hobbys</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
         </div>
       </nav>
     </header>
     <main>
-        <section class="firstsection">
-            <div class="leftside">Hi I am <span class="Cream-color"> Kaustubh Patil </span> As know As K8BH I am a Indie Developer </div>
-            <div class="rightside">
-                <img src="bgfinal.png" alt="" srcset="">
-            </div>
+      <section class="firstsection">
+        <div class="leftside">
+          Hi I am <span class="Cream-color"> Kaustubh Patil </span> As know As
+          K8BH I am a Indie Developer
+          <br>
 
-        </section>
+          <span id="element"></span>
+        </div>
+        <div class="rightside">
+          <img src="bgfinal.png" alt="" srcset="" />
+        </div>
+      </section>
     </main>
+       </script> <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element',{
+        strings:['Web Designer', 'Guitarist' , 'Web Developer','Musician','<span style="color:  #D2042D;">Hackclubber</span>'],  typeSpeed: 40,
+      });
+</script>
   </body>
 </html>

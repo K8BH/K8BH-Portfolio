@@ -328,8 +328,42 @@
           btn.className = "opt-btn";
           btn.disabled = false;
 
-        });
+        }); 
+        
       }
+      optBtns.forEach((btn) => {
+        btn.onclick = () => {
+          optBtns.forEach((b) => (b.disabled = true));
+          const ok = Number(btn.dataset.index) === quizData[curIdx].ans;
+          btn.classList.add(ok ? "correct" : "wrong");
+          if (ok) score++;
+          msgEL.textContent = ok ? "correct" : "wrong" ;
+
+          setTimeout(() => {
+            curIdx++;
+            if (curIdx < quizData.length) {
+              showQuestion();
+            } else {
+              qEL.textContent = `score: ${score}/${quizData.length}`;
+              msgEL.textContent = 
+              score === quizData.length
+              ? "yayay u read the whole page!! didt u??"
+              : "try reading my portfolio again!! ";
+              optBtns.forEach((b) => (b.style.display = "none"));
+              resetBtn.style.display = "inline-block";
+            }
+          }, 800);
+        };
+      });
+
+      resetBtn.onclick = () => {
+        curIdx = 0;
+        score = 0;
+        resetBtn.style.display = "none";
+        optBtns.forEach((b) => (b.style.display = ""));
+        showQuestion();
+      };
+      showQuestion();
     </script>
   </body>
 </html>

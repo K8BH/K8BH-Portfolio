@@ -176,6 +176,27 @@
         text-align: left;
         font-size: 0.95rem;
       }
+      .opt-btn:hover:not(:disabled) {
+        background: #567251;
+      }
+      .opt-btn.correct {
+        background-color: #2e6930;
+        border-color: #85e085;
+
+      }
+      .opt-btn.wrong {
+        background-color: #8b2b2b;
+        border-color: #ff9999;
+      }
+      .opt-btn:disabled {
+        cursor: not-allowed;
+      }
+      #quiz-msg {
+        min-height: 24px;
+        margin-top: 10px;
+        font-weight: 500;
+        color: #fff2b4;
+      }
 
     </style>
   </head>
@@ -293,7 +314,7 @@
       const qEL = document.getElementById("quiz-q");
       const countEL = document.getElementById("quiz-count");
       const msgEL = document.getElementById("quiz-msg");
-      const optBtns = document.getElementById("quiz-opts .opt-btn")
+      const optBtns = document.querySelectorAll("#quiz-opts .opt-btn")
       const resetBtn = document.getElementById("quiz-reset");
 
       function showQuestion() {

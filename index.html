@@ -18,7 +18,18 @@
         box-sizing: border-box;
       }
       body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
         background-color: #728e6d;
         color: white;
         line-height: 1.5;
@@ -63,35 +74,33 @@
       .Cream-color {
         color: #fff2b4;
       }
-      .color-white{
-        color:#ffffff;
+      .color-white {
+        color: #ffffff;
       }
       nav ul li a {
         text-decoration: none;
         color: white;
-
       }
-      nav ul li a:hover{
+      nav ul li a:hover {
         color: burlywood;
         font-size: 1.07rem;
-
       }
-      hr{
+      hr {
         border: 0;
-        background-color:#35572c;
+        background-color: #35572c;
         height: 1.6px;
         margin: 45px 85px;
       }
-      .secondsection{
+      .secondsection {
         max-width: 1000px;
         margin: 60px auto;
         padding: 0 20px;
       }
-      .secondsection h1{
+      .secondsection h1 {
         font-size: 2rem;
         margin-bottom: 25px;
       }
-      .secondsection .box{
+      .secondsection .box {
         display: flex;
         justify-content: space-around;
         gap: 20px;
@@ -99,43 +108,75 @@
         padding-top: 20px;
         flex-wrap: wrap;
       }
-      .secondsection .vertical-line{
+      .secondsection .vertical-line {
         flex: 1 1 180px;
         border-left: 2px solid #35572c;
         padding-left: 12px;
-        
       }
-      .vertical-title{
+      .vertical-title {
         color: #fff2b4;
-        font-size: 0.90rem;
+        font-size: 0.9rem;
         font-weight: 500;
-
       }
-      .content-section{
-
+      .content-section {
         max-width: 1000px;
         margin: 60px auto;
         padding: 0 20px;
       }
-      .content-section h2{
+      .content-section h2 {
         font-size: 2rem;
         color: #e5cd82;
         margin-bottom: 16px;
       }
-      .projects-grid{
+      .projects-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
-        gap: 16px ;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
       }
-      .project-card{
+      .project-card {
         background-color: #35572c;
         padding: 18px;
         border-radius: 6px;
       }
-      .project-card h3{
+      .project-card h3 {
         color: #fff2b4;
         margin-bottom: 8px;
       }
+      .arcade-box {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #35572c;
+        border-radius: 3px;
+      }
+      .arcade-head{
+        display: flex;
+        justify-content: space-between;
+        color: #fff2b4;
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+      }
+      #quiz-q{
+        font-size: 1.1rem;
+        color: #e5cd82;
+        margin-bottom: 14px;
+      }
+      #quiz-opts{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .opt-btn{
+        background: #728e6d;
+        color: #ffffff;
+        border: 1px solid #35572c;
+        padding: 10px 14px;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: left;
+        font-size: 0.95rem;
+      }
+
     </style>
   </head>
   <body>
@@ -157,7 +198,7 @@
         <div class="leftside">
           Hi I am <span class="Cream-color"> Kaustubh Patil </span> As know As
           K8BH I am a Indie Developer
-          <br>
+          <br />
 
           <span id="element"></span>
         </div>
@@ -165,21 +206,17 @@
           <img src="bgfinal.png" alt="" srcset="" />
         </div>
       </section>
-      <hr>
+      <hr />
       <section class="secondsection" id="timeline">
         <span class="color-white">What i Liked soo far</span>
 
-        <h1>FAVOURITE </h1>
+        <h1>FAVOURITE</h1>
         <div class="box">
           <div class="vertical-line">
-            <div class="vertical-title">
-              Mobile Video Games (2021-2023)
-            </div>
+            <div class="vertical-title">Mobile Video Games (2021-2023)</div>
           </div>
           <div class="vertical-line">
-            <div class="vertical-title">
-              Game Development(2022-2024)
-            </div>
+            <div class="vertical-title">Game Development(2022-2024)</div>
           </div>
           <div class="vertical-line">
             <div class="vertical-title">
@@ -188,45 +225,90 @@
           </div>
           <div class="vertical-line">
             <div class="vertical-title">
-UHH joined hackclub (march 2026 to rn)
+              UHH joined hackclub (march 2026 to rn)
             </div>
-              
-            
           </div>
         </div>
       </section>
       <section class="content-section" id="projects">
         <h2>Projects</h2>
-        <div class="projects-grid" >
+        <div class="projects-grid">
           <div class="project-card">
             <h3>Dungeon Sweeper Quest</h3>
-            <p>Tile based Dungeon explorar developed for Sprig (Has bugs btw)</p>
+            <p>
+              Tile based Dungeon explorar developed for Sprig (Has bugs btw)
+            </p>
           </div>
           <div>
             <div class="project-card">
               <h3>stuDYING WebOS</h3>
-              <p>minimal web desktop interface with floating application frames  </p>
+              <p>
+                minimal web desktop interface with floating application frames
+              </p>
             </div>
           </div>
-
         </div>
       </section>
-      <hr>
+      <hr />
       <section id="arcade" class="arcade-box">
         <div class="arcade-head">
           <span>What u LEARNT from MY PORTFOLIO</span>
-          <span class="quiz-count">0/4</span>
+          <span class="quiz-count" id="quiz-count">1/4</span>
         </div>
-        <p id="quiz-q">Loading ur REVISON!!</p>
-        <div id="quiz-opts"></div>
+        <p id="quiz-q">WHat was Dungeon Sweeper made for??</p>
+        <div id="quiz-opts">
+          <button type="button" class="opt-btn" data-index="0">Option 1</button>
+          <button type="button" class="opt-btn" data-index="1">Option 2</button>
+          <button type="button" class="opt-btn" data-index="2">Option 3</button>
+        </div>
         <div id="quiz-msg"></div>
+        <button type="button" class="restart-btn" id="quiz-reset" style="display: none;">Read my info again</button>
       </section>
     </main>
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed('#element',{
-        strings:['Web Designer', 'Guitarist' , 'Web Developer','Musician','<span style="color:  #D2042D;">Hackclubber</span>'],  typeSpeed: 40,
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Designer",
+          "Guitarist",
+          "Web Developer",
+          "Musician",
+          '<span style="color:  #D2042D;">Hackclubber</span>',
+        ],
+        typeSpeed: 40,
       });
-</script>
+    </script>
+    <script>
+      const quizData = [
+        {
+          q: "what was dungeon sweeper made for?",
+          opts:["Sprig","pico-8","Game Boy"],
+          ans: 0
+        },
+
+      ];
+      let curIdx = 0;
+      let score = 0;
+
+      const qEL = document.getElementById("quiz-q");
+      const countEL = document.getElementById("quiz-count");
+      const msgEL = document.getElementById("quiz-msg");
+      const optBtns = document.getElementById("quiz-opts .opt-btn")
+      const resetBtn = document.getElementById("quiz-reset");
+
+      function showQuestion() {
+        const current = quizData[curIdx];
+        countEL.textContent = `${curIdx + 1}/${quizData.length}`;
+        qEL.textContent = current.q;
+        msgEL.textContent = "";
+
+        optBtns.forEach((btn,i) => {
+          btn.textContent = current.opts[i];
+          btn.className = "opt-btn";
+          btn.disabled = false;
+
+        });
+      }
+    </script>
   </body>
 </html>

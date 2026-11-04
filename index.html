@@ -197,6 +197,20 @@
         font-weight: 500;
         color: #fff2b4;
       }
+      .restart-btn {
+        margin-top: 14px;
+        background-color: #e5cd82;
+        color: #35572c;
+        border: 0;
+        padding: 8 px 16px;
+        border-radius: 4px;
+        font-weight: 700;
+        cursor: pointer;
+        font-size: 0.95rem;
+      }
+      .restart-btn:hover {
+        background-color: #fff2b4;
+      }
 
     </style>
   </head>
@@ -306,6 +320,23 @@
           opts:["Sprig","pico-8","Game Boy"],
           ans: 0
         },
+        {
+          q: "what Instrument Do i play??",
+          opts: ["Guitar","violin","keyboard"],
+          ans:0
+
+        },
+        {
+          q: "How does stuDYING webOS organize windows??",
+          opts:["Floating frames","tiling only","CLI terminal"],
+          ans:0
+        },
+        {
+          q: "When did i join Hackclub??",
+          opts:["2026","2025","2024"],
+          ans:0
+
+        }
 
       ];
       let curIdx = 0;

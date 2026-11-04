@@ -14,9 +14,7 @@ Instead of letting ppl just scroll away my project and ignore them (feels bad :(
 
 ![alt text](<Screenshot (113).png>)
 
-![
-    
-](<Screenshot (114).png>)
+![alt text](<Screenshot (114).png>)
 
  ![alt text](<Screenshot (115).png>)
 
